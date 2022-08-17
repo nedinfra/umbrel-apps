@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: bakepi
-category: DEVELOPMENT
+category: Development
 name: BakePi
 version: "0.0.1"
 tagline: Tezos Baker Node
@@ -12,4 +12,3 @@ dependencies: []
 repo: https://github.com/agora-org/agora
 support: https://t.me/agoradiscussion
 port: 80
-torOnly: false
