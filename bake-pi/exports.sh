@@ -1,2 +1,2 @@
 export APP_BAKEPI_IP="10.21.21.125"
-export APP_BAKEPI_PORT="4200"
+export APP_BAKEPI_PORT="80"
