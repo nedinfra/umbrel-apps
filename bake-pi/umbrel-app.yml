@@ -11,4 +11,5 @@ website: https://pierrenedelec.com
 dependencies: []
 repo: https://github.com/agora-org/agora
 support: https://t.me/agoradiscussion
-port: 80
+port: 8120
+torOnly: false
