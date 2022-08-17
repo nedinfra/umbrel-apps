@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: $APP_IP
+      APP_PORT: 8000
+
+  server:
+    image: portainer/portainer-ce:latest@sha256:cd9161edd635fa7352d24587006d29064e14484fc1bd28e2af32f96af990f886
+    restart: always
+    stop_grace_period: 1m
+    init: true
+    volumes:
+      - ${APP_DATA_DIR}:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      default:
+        ipv4_address: $APP_IP

@@ -1,0 +1,13 @@
+manifestVersion: 1
+id: portainer
+category: Development
+name: Portainer
+version: "0.0.1"
+tagline: Portainer
+description: >-
+  Portainer
+developer: Pierre Nédélec
+website: https://pierrenedelec.com
+dependencies: []
+port: 8777
+torOnly: false
