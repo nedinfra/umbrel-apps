@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: bakepi
+category: DEVELOPMENT
+name: BakePi
+version: "0.0.1"
+tagline: Tezos Baker Node
+description: >-
+  BakePi is a project that allows anyone to start baking with Tezos
+
+developer: Pierre Nédélec
+website: https://pierrenedelec.com
+repo: https://github.com/agora-org/agora
+support: https://t.me/agoradiscussion
+port: 12080
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: /admin/
+deterministicPassword: true
+defaultUsername: umbrel
+torOnly: false
