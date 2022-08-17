@@ -10,3 +10,6 @@ services:
     image: psykolm22/bake-pi:v1.0.0@sha256:4be4f9f23eec3930790d3a213ea59e1931e062da9ef0c33a15909d46f6d58abf
     restart: on-failure
     user: "1000:1000"
+    networks:
+      default:
+        ipv4_address: $APP_BAKEPI_IP
