@@ -9,5 +9,5 @@ description: >-
 developer: Pierre Nédélec
 website: https://pierrenedelec.com
 dependencies: []
-port: 8777
+port: 9443
 torOnly: false

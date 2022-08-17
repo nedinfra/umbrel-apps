@@ -4,11 +4,16 @@ services:
   app_proxy:
     environment:
       APP_HOST: $APP_IP
-      APP_PORT: 8000
+      APP_PORT: 9443
 
   server:
     image: portainer/portainer-ce:latest@sha256:cd9161edd635fa7352d24587006d29064e14484fc1bd28e2af32f96af990f886
-    restart: always
+    restart: on-failure
+    container_name: portainer
+    ports:
+      - 8000:8000
+      - 9443:9443
+      - 9443:9443/udp
     stop_grace_period: 1m
     init: true
     volumes:
