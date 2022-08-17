@@ -11,7 +11,7 @@ developer: Pierre Nédélec
 website: https://pierrenedelec.com
 repo: https://github.com/agora-org/agora
 support: https://t.me/agoradiscussion
-port: 12080
+port: 4200
 gallery:
   - 1.jpg
   - 2.jpg
