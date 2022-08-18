@@ -1,17 +1,18 @@
 manifestVersion: 1
-id: bakepi
+id: tearunner
 category: Development
-name: BakePi
+name: TeaRunner
 version: "0.0.1"
-tagline: Tezos Baker Node
+tagline: Tea Runner
 description: >-
-  BakePi is a project that allows anyone to start baking with Tezos
+  Tea Runner CI/CD for Gitea
 developer: Pierre Nédélec
 website: https://pierrenedelec.com
-dependencies: []
+dependencies: 
+  - gitea
 repo: https://github.com/agora-org/agora
 support: https://t.me/agoradiscussion
-port: 8120
+port: 8121
 path: ""
 defaultUsername: ""
 defaultPassword: ""

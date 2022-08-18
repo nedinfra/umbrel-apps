@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: $APP_TEA_RUNNER_IP
+      APP_PORT: 1706
+
+  tea-runner:
+    build: .
+    image: davescodemusings/tea-runner:latest@sha256:34e06a1b83302181d8b973bcf3bca6d22dd53b617b9689048376ec0414432cc6
+    container_name: tea-runner
+    hostname: tea-runner
+    restart: unless-stopped
+    ports:
+      - "1706:1706"
+    volumes:
+      - ./config.ini:/usr/src/app/config.ini
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /srv/www:/srv/www
+    networks:
+      default:
+        ipv4_address: $APP_TEA_RUNNER_IP
