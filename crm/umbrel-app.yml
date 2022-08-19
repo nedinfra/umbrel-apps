@@ -1,18 +1,17 @@
 manifestVersion: 1
 id: bakepi
-category: Development
-name: BakePi
+category: productivity
+name: CRM
 version: "0.0.1"
-tagline: Tezos Baker Node
+tagline: CRM
 description: >-
-  BakePi is a project that allows anyone to start baking with Tezos
+  CRM Projects
 developer: Pierre Nédélec
 website: https://pierrenedelec.com
 dependencies: []
 repo: https://github.com/agora-org/agora
 support: https://t.me/agoradiscussion
-port: 8120
+port: 8123
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-torOnly: false

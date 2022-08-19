@@ -1,0 +1,2 @@
+export APP_CRM_IP="10.21.21.127"
+export APP_CRM_PORT="8123"

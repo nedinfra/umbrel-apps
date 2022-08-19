@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: $APP_CRM_IP
+      APP_PORT: 80
+
+  web:
+    image: psykolm22/crm:v0.0.1@sha256:7548cd27cb716253e88b141be96f544ce1552eae81825b2a198e01704271a25e
+    restart: on-failure
+    stop_grace_period: 1m
+    networks:
+      default:
+        ipv4_address: $APP_CRM_IP
+        
