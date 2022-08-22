@@ -1,24 +1,25 @@
-version: '3'
+version: "3.7"
 
 services:
   app_proxy:
     environment:
       APP_HOST: $APP_MM_IP
-      APP_PORT: 8080
-      PROXY_AUTH_ADD: "false"
+      APP_PORT: 8144
+
   magicmirror:
-    container_name: mm
     image: karsten13/magicmirror:latest@sha256:65c3c59e2a430ae36757c87e548a014b3cde38672655c1606bd601af70a5f9fc
+    user: "1000:1000"
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/mounts/config:/opt/magic_mirror/config
+      - ${APP_DATA_DIR}/mounts/modules:/opt/magic_mirror/modules
+      - ${APP_DATA_DIR}/mounts/css:/opt/magic_mirror/css
     ports:
       - 8080:8080
     networks:
       default:
         ipv4_address: $APP_MM_IP
-    volumes:
-      - ${APP_DATA_DIR}/mounts/config:/opt/magic_mirror/config
-      - ${APP_DATA_DIR}/mounts/modules:/opt/magic_mirror/modules
-      - ${APP_DATA_DIR}/mounts/css:/opt/magic_mirror/css
-    restart: on-failure
     command: 
       - npm
       - run
