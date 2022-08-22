@@ -6,3 +6,5 @@ version: "0.0.1"
 tagline: Magic Mirror Server
 description: >-
   Magic Mirror Server
+developer: Pierre Nédélec
+port: 8144

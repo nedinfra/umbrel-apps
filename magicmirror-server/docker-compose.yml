@@ -9,6 +9,8 @@ services:
   magicmirror:
     container_name: mm
     image: karsten13/magicmirror:latest@sha256:65c3c59e2a430ae36757c87e548a014b3cde38672655c1606bd601af70a5f9fc
+    ports:
+      - 8080:8080
     networks:
       default:
         ipv4_address: $APP_MM_IP
