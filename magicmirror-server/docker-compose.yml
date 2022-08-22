@@ -4,14 +4,11 @@ services:
   app_proxy:
     environment:
       APP_HOST: $APP_MM_IP
-      APP_PORT: 80
+      APP_PORT: 8080
       PROXY_AUTH_ADD: "false"
   magicmirror:
     container_name: mm
-    user: "1000:1000"
     image: karsten13/magicmirror:latest@sha256:65c3c59e2a430ae36757c87e548a014b3cde38672655c1606bd601af70a5f9fc
-    ports:
-      - "8080:8080"
     networks:
       default:
         ipv4_address: $APP_MM_IP
