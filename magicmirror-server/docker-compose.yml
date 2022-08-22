@@ -7,7 +7,7 @@ services:
       APP_PORT: 8144
 
   magicmirror:
-    image: karsten13/magicmirror:latest@sha256:65c3c59e2a430ae36757c87e548a014b3cde38672655c1606bd601af70a5f9fc
+    image: karsten13/magicmirror:fat@sha256:c661b287f3fdd15fa2d85bfffaecb2b07395b6727d162dd28989e2b5811da528
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
