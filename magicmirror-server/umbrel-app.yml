@@ -1,0 +1,18 @@
+manifestVersion: 1
+id: magicmirror
+category: Development
+name: MagicMirror
+version: "0.0.1"
+tagline: Magic Mirror Server
+description: >-
+  Magic Mirror Server
+developer: Pierre Nédélec
+website: https://pierrenedelec.com
+dependencies: []
+repo: https://github.com/agora-org/agora
+support: https://t.me/agoradiscussion
+port: 8144
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
