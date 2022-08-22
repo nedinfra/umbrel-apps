@@ -16,7 +16,7 @@ services:
       - ${APP_DATA_DIR}/mounts/modules:/opt/magic_mirror/modules
       - ${APP_DATA_DIR}/mounts/css:/opt/magic_mirror/css
     ports:
-      - 8080:8080
+      - 8080:8144
     networks:
       default:
         ipv4_address: $APP_MM_IP
