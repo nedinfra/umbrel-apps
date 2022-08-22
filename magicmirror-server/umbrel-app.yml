@@ -8,8 +8,7 @@ description: >-
   Magic Mirror Server
 developer: Pierre Nédélec
 website: https://suredbits.com
-dependencies: 
-  - []
+dependencies: []
 port: 8144
 path: ""
 defaultUsername: ""
