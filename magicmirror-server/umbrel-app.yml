@@ -7,4 +7,10 @@ tagline: Magic Mirror Server
 description: >-
   Magic Mirror Server
 developer: Pierre Nédélec
+website: https://suredbits.com
+dependencies: 
+  - []
 port: 8144
+path: ""
+defaultUsername: ""
+defaultPassword: ""
